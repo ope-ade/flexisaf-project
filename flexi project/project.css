@@ -1,0 +1,818 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li.toplist {
+    float: right;
+    margin-right: 20px;
+}
+
+li.toplist a.BAR {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 9px;
+    font-size: 19px;
+}
+
+a.BAR:hover {
+    border-bottom: 4px solid blue;
+    border-radius: 5%;
+    transition: 0.2s;
+}
+
+.auto-img img {
+    padding: 30px;
+}
+
+.auto-text {
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    font-size: 40px;
+}
+
+.auto-text2 {
+    color: white;
+    position: absolute;
+    top: 300px;
+    left: 470px;
+}
+
+.auto-text3 {
+    color: white;
+    position: absolute;
+    top: 320px;
+    left: 700px;
+}
+
+.auto-img {
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: example;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    /*to continue the loop*/
+}
+
+
+/* to change the top picture pitures*/
+
+@keyframes example {
+    0% {
+        background-image: url('img project/12.jpg');
+    }
+    10% {
+        background-image: url('img project/cute.jpg');
+    }
+    20% {
+        background-image: url('img project/DSC_8224.jpg');
+    }
+    30% {
+        background-image: url('img project/DSC_8246.jpg')
+    }
+    40% {
+        background-image: url('img project/he.jpg')
+    }
+    50% {
+        background-image: url('img project/live-band-in-abuja.jpg')
+    }
+    60% {
+        background-image: url('img project/parfee-service-1.jpg')
+    }
+    70% {
+        background-image: url('img project/slider-2-scaled.jpg')
+    }
+    80% {
+        background-image: url('img project/slider11-1.jpg')
+    }
+    90% {
+        background-image: url('img project/DSC_8246.jpg')
+    }
+    100% {
+        background-image: url('img project/cute\ \(1\).jpg')
+    }
+}
+
+.columimg {
+    /*the indivdual div of the shop shortcut section*/
+    /* also the same code for the menu*/
+    float: left;
+    /* to display inline*/
+    width: 33.33%;
+    padding: 20px;
+    overflow: hidden;
+    /*to hide tiny overflows*/
+}
+
+#firstimg {
+    height: 380px;
+}
+
+
+/*the id of the images*/
+
+.columimg #firstimg {
+    transition: 0.5s;
+    /* how long you want the animation to last*/
+}
+
+.columimg:hover #firstimg {
+    filter: brightness(130%);
+    /* to increase the brightness*/
+    cursor: pointer;
+}
+
+#Containimgs {
+    /* the div container for the individual div*/
+    clear: both;
+    /*they both dont do anything you can take it out*/
+    display: table;
+    margin-left: 10px;
+    /* to make the pic give space*/
+}
+
+#text1 {
+    /*for the caption on the images*/
+    color: brown;
+    text-transform: uppercase;
+}
+
+.learn-more {
+    border: 2px solid blue;
+    color: blue;
+    text-align: center;
+    padding: 10px 30px;
+    background-color: white;
+}
+
+.learn-more:hover {
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(26, 26, 127);
+}
+
+.secdiv {
+    background-image: url('img project/about.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    opacity: 0.8;
+    background-attachment: fixed;
+}
+
+.secdiv-p1 {
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding-top: 200px;
+    font-size: 30px;
+    opacity: 3;
+}
+
+.secdiv-p2 {
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    opacity: 3;
+}
+
+.secdiv button {
+    border: 2px solid white;
+    padding: 15px 40px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    left: 700px;
+    opacity: 3;
+}
+
+.secdiv button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/*@media only screen and (min-width: 480px) {
+    .image1 {
+        margin-left: 300px;
+        ;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .image1 {
+        flex: 10px;
+        margin-left: 300px;
+        max-width: 33.3%;
+    }
+}*/
+
+.div {
+    height: auto;
+    margin-left: 250px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 20px;
+}
+
+.div img:hover {
+    filter: brightness(130%);
+}
+
+.div h1 {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    right: 100px;
+}
+
+
+/*about us page*/
+
+.abouttop {
+    background-image: url('img project/parfee-service-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    opacity: 0.9;
+}
+
+.about-uptext {
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    opacity: 5;
+}
+
+.about-uptext2 {
+    color: white;
+    position: absolute;
+    top: 300px;
+    left: 470px;
+    font-size: 20px;
+    opacity: 5;
+}
+
+.about-uptext3 {
+    color: white;
+    position: absolute;
+    top: 347px;
+    left: 650px;
+    font-size: 20px;
+    opacity: 5;
+}
+
+#aboutustexthead {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    top: 200px;
+}
+
+div.containersAboutus {
+    display: flex;
+    justify-content: center;
+}
+
+.containersAboutus2 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(226, 226, 226);
+}
+
+div.imageAboutus img {
+    height: 300px;
+    width: 120%;
+}
+
+div.text1Aboutus {
+    padding-right: 110px;
+    font-size: 30px;
+}
+
+#aboutuspassage {
+    font-size: 20px;
+}
+
+#aboutuspassage2 {
+    font-size: 20px;
+}
+
+#headingAboutus {
+    font-size: 50px;
+}
+
+div.text1Aboutus4 {
+    padding-left: 200px;
+}
+
+div.imageAboutus2 img {
+    height: 300px;
+    width: 110%;
+}
+
+.aboutbot {
+    border: 2px solid rgb(82, 82, 255);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgb(58, 58, 144)
+}
+
+.aboutbot:hover {
+    transform: scale(1.1);
+    background-color: blue;
+}
+
+
+/* the manager*/
+
+.containersAboutus6 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(56, 56, 56);
+}
+
+.manager {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    border: 3px solid rgb(56, 56, 56);
+    width: 200%;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 2px 2px white;
+}
+
+#headingAboutus4 {
+    font-size: 30px;
+    color: white;
+}
+
+.quote {
+    font-size: 10px;
+    color: white;
+}
+
+#aboutuspassage6 {
+    font-size: 20px;
+    color: white;
+}
+
+.manpic {
+    border-bottom-left-radius: 150px;
+    padding: 30px;
+    margin-top: 100px;
+}
+
+
+/*end of about page*/
+
+
+/*start of coperate event page*/
+
+.coperatetop {
+    background-image: url('img project/happy-monets-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    opacity: 0.9;
+    background-attachment: fixed;
+}
+
+.coperate-uptext {
+    color: white;
+    position: absolute;
+    top: 250px;
+    left: 500px;
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    opacity: 5;
+}
+
+.copcontainer {
+    text-align: center;
+    align-self: center;
+}
+
+.copcontainer p {
+    font-size: 20px;
+}
+
+
+/*after dark page*/
+
+div.containersafter {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+#headingAfter {
+    font-size: 50px;
+    color: white;
+}
+
+div.text1After {
+    padding-right: 110px;
+    font-size: 40px;
+}
+
+#afterpassage {
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+}
+
+.after {
+    background-color: rgb(52, 52, 95);
+    padding: 10px;
+    position: relative;
+}
+
+li.toplist a.BAR1 {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 9px;
+    font-size: 19px;
+    position: relative;
+    border-bottom: 3px solid transparent;
+}
+
+.after a.BAR1:hover {
+    border-bottom: 3px solid blue;
+    border-radius: 5%;
+    transition: 0.2s;
+}
+
+div.imageafter img {
+    height: 400px;
+    width: 100%;
+}
+
+
+/*end of after page*/
+
+
+/*make rev*/
+
+.logcontainer {
+    height: 650px;
+}
+
+fieldset {
+    margin: auto;
+    width: 833px;
+    height: 820px;
+    border: none;
+}
+
+.logcontainer h1 {
+    color: rgb(8, 8, 221);
+}
+
+.body {
+    background-color: white;
+}
+
+label {
+    font-size: 20px;
+    color: black;
+}
+
+::placeholder {
+    font-size: 15px;
+}
+
+.nameinput {
+    width: 45%;
+    padding: 15px;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 1px solid black;
+    color: black;
+}
+
+.otherinput {
+    width: 90%;
+    padding: 15px;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 1px solid black;
+    color: black;
+}
+
+textarea {
+    border-radius: 20px;
+    background-color: transparent;
+    color: black;
+}
+
+.submit5 {
+    background-color: green;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid white;
+    position: relative;
+    left: 650px;
+}
+
+.submit5:hover {
+    background-color: white;
+    color: green;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: rgb(42, 42, 112);
+    height: 300px;
+    display: flexbox;
+}
+
+
+/*padding 30px 145px*/
+
+.footnav1 {
+    float: left;
+    padding: 30px;
+    position: relative;
+    left: 250px;
+    color: white;
+}
+
+.footnav2 {
+    float: left;
+    padding: 30px;
+    position: relative;
+    left: 360px;
+    color: white;
+}
+
+.footnav3 {
+    float: left;
+    padding: 30px;
+    position: relative;
+    left: 430px;
+    color: white;
+}
+
+.ul {
+    text-decoration: none;
+    list-style: none;
+    line-height: 1.6;
+    /*to space it out*/
+}
+
+.footA {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.footA:hover {
+    color: brown;
+}
+
+.signtext2 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.signtext2:hover {
+    color: brown;
+}
+
+.copyright {
+    position: relative;
+    top: 260px;
+    right: 300px;
+    color: white;
+}
+
+
+/*icon*/
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 100%;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 100%;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.fa-instagram {
+    background-color: rgb(169, 54, 89);
+    color: white;
+    border-radius: 100%;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.fa-whatsapp {
+    background-color: green;
+    color: white;
+    border-radius: 100%;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+/*contact page*/
+
+.contactcontainer a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+.contactcontainer a:hover {
+    color: blue;
+}
+
+.formdiv input {
+    width: 70%;
+    padding: 15px;
+}
+
+.contactcontainer {
+    display: flex;
+    margin-left: 300px;
+}
+
+.formdiv {
+    margin-left: 50px;
+}
+
+.formdiv button {
+    padding: 10px;
+    border: 2px solid blue;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-size: 15px;
+    background-color: white;
+    color: blue;
+}
+
+.formdiv button:hover {
+    border: 2px solid white;
+    color: white;
+    background-color: blue;
+}
+
+.formdiv textarea {
+    color: black;
+    border-radius: 0px;
+}
+
+@media screen and ( max-width:1024px) {
+    li.toplist a.BAR {
+        padding: 20px;
+        padding-top: 40px;
+    }
+    .auto-text {
+        position: absolute;
+        left: 300px;
+    }
+    .auto-text2 {
+        position: absolute;
+        left: 200px;
+    }
+    .auto-text3 {
+        position: absolute;
+        left: 400px;
+    }
+    .secdiv button {
+        position: relative;
+        left: 450px;
+    }
+    .div {
+        margin-left: 20px;
+    }
+    .footnav1 {
+        float: left;
+        padding: 30px;
+        position: relative;
+        left: 70px;
+        color: white;
+    }
+    .footnav2 {
+        float: left;
+        padding: 30px;
+        position: relative;
+        left: 150px;
+        color: white;
+    }
+    .footnav3 {
+        float: left;
+        padding: 30px;
+        position: relative;
+        left: 220px;
+        color: white;
+    }
+    .copyright {
+        position: relative;
+        right: 400px;
+    }
+    .about-uptext {
+        position: absolute;
+        left: 500px;
+    }
+    .about-uptext2 {
+        position: absolute;
+        left: 200px;
+    }
+    .about-uptext3 {
+        position: absolute;
+        left: 400px;
+    }
+    div.imageAboutus img {
+        padding: 30px;
+        position: relative;
+        right: 90px;
+    }
+    #aboutuspassage {
+        margin-left: 30px;
+    }
+    #headingAboutus {
+        margin-left: 30px;
+    }
+    .aboutbot {
+        margin-left: 30px;
+    }
+    .aboutody {
+        padding: 0px;
+        margin: 0px;
+        margin-right: 0px;
+        width: auto;
+    }
+    .coperate-uptext {
+        position: absolute;
+        left: 300px;
+    }
+    #headingAfter {
+        margin-left: 80px;
+    }
+    #afterpassage {
+        margin-left: 80px;
+    }
+    div.imageafter img {
+        padding: 30px;
+        position: relative;
+        top: 140px;
+    }
+    .contactcontainer {
+        margin-left: 100px;
+    }
+}
